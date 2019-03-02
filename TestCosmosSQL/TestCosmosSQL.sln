@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCosmosSQL.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCosmosSQL.RestAPI.Tests", "TestCosmosSQL\TestCosmosSQL.RestAPI.Tests\TestCosmosSQL.RestAPI.Tests.csproj", "{99A4DD1C-2183-4E02-99CC-D9906ECB63F8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmoLibrary.Common", "CosmoLibrary.Common\CosmoLibrary.Common.csproj", "{9AD8716A-8B33-4A92-8607-C6B69CDC38E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmoLibrary.SqlDriver", "CosmoLibrary.SqlDriver\CosmoLibrary.SqlDriver.csproj", "{468B77C2-A6B4-4C09-B160-19808FCC86B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{99A4DD1C-2183-4E02-99CC-D9906ECB63F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99A4DD1C-2183-4E02-99CC-D9906ECB63F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99A4DD1C-2183-4E02-99CC-D9906ECB63F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AD8716A-8B33-4A92-8607-C6B69CDC38E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD8716A-8B33-4A92-8607-C6B69CDC38E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD8716A-8B33-4A92-8607-C6B69CDC38E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD8716A-8B33-4A92-8607-C6B69CDC38E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{468B77C2-A6B4-4C09-B160-19808FCC86B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468B77C2-A6B4-4C09-B160-19808FCC86B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468B77C2-A6B4-4C09-B160-19808FCC86B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468B77C2-A6B4-4C09-B160-19808FCC86B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

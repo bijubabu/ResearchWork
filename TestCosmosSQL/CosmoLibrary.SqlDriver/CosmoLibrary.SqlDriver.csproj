@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <PackageId>CAP.CosmoLibrary.SqlDriver</PackageId>
+    <Authors>Conduent CAP Core Team</Authors>
+    <Company>Conduent</Company>
+    <Product>CAP</Product>
+    <Description>Generic repository implementation for Cosmo Library</Description>
+    <Copyright>Conduent</Copyright>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.2.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CosmoLibrary.Common\CosmoLibrary.Common.csproj">
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+      <Private>true</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <PackageId>CAP.CosmoLibrary.Common</PackageId>
+    <Authors>Conduent CAP Core Team</Authors>
+    <Company>CAP</Company>
+    <Description>Common objects for Cosmo DB Sql driver</Description>
+    <Copyright>Conduent</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CAP.ValidationLibrary.Attributes" Version="2019.2.27.1" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.2.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>
