@@ -10,10 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CAP.ValidationLibrary.Attributes" Version="2019.2.27.1" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\ValidationLibrary.Attributes\ValidationLibrary.Attributes.csproj" />
     <ProjectReference Include="..\TestCosmosSQL.Domain\TestCosmosSQL.Domain.csproj" />
   </ItemGroup>
 

@@ -17,10 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CosmoLibrary.Common\CosmoLibrary.Common.csproj">
-      <EmbedInteropTypes>false</EmbedInteropTypes>
-      <Private>true</Private>
-    </ProjectReference>
+    <ProjectReference Include="..\CosmoLibrary.Common\CosmoLibrary.Common.csproj" />
   </ItemGroup>
 
 </Project>

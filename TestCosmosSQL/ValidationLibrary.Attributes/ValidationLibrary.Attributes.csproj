@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <PackageId>CAP.ValidationLibrary.Attributes</PackageId>
+    <Authors>Conduent CAP Core Team</Authors>
+    <Company>Conduent</Company>
+    <Product>CAP</Product>
+    <Description>Custom Validation Attributes for .net core</Description>
+    <Copyright>Conduent</Copyright>
+    <PackageLicenseUrl />
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+</Project>

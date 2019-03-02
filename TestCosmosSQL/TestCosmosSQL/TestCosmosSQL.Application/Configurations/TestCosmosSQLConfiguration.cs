@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using CAP.ValidationLibrary.Attributes;
+using ValidationLibrary.Attributes;
 
 namespace TestCosmosSQL.Application.Configuration
 {

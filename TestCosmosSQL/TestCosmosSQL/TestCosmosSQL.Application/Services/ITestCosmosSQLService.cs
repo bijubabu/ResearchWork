@@ -14,6 +14,6 @@ namespace TestCosmosSQL.Application.Services
         /// Gets a resource
         /// </summary>
         /// <returns></returns>
-        Task<TestCosmosSQLDto> GetResourceAsync(Guid id, CancellationToken cancellationToken);
+        Task<PlaceCreateDto> GetResourceAsync(Guid id, CancellationToken cancellationToken);
     }
 }

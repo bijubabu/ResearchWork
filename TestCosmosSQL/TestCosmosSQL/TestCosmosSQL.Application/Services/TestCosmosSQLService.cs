@@ -19,12 +19,12 @@ namespace TestCosmosSQL.Application.Services
             _configuration = configuration;
         }
         /// <inheritdoc />
-        public Task<TestCosmosSQLDto> GetResourceAsync(Guid id, CancellationToken cancellationToken)
+        public Task<PlaceCreateDto> GetResourceAsync(Guid id, CancellationToken cancellationToken)
         {
             TestCosmosSQLConfiguration config = _configuration.CurrentValue;
 
             cancellationToken.ThrowIfCancellationRequested();
-            return Task.FromResult(new TestCosmosSQLDto());
+            return Task.FromResult(new PlaceCreateDto());
 
         }
     }

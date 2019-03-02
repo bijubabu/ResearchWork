@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "0ca09a313efd3ead56845d0ac7f59e688a4b0923"
+    "signature": "f90e3ce4041abca356c3631f5e42fd4f0315517e"
   },
   "compilationOptions": {},
   "targets": {
@@ -14,14 +14,6 @@
         },
         "runtime": {
           "CosmoLibrary.SqlDriver.dll": {}
-        }
-      },
-      "CAP.ValidationLibrary.Attributes/2019.2.27.1": {
-        "runtime": {
-          "lib/netcoreapp2.2/CAP.ValidationLibrary.Attributes.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
         }
       },
       "Microsoft.Azure.DocumentDB.Core/2.2.1": {
@@ -1068,13 +1060,18 @@
       },
       "CAP.CosmoLibrary.Common/1.0.0": {
         "dependencies": {
-          "CAP.ValidationLibrary.Attributes": "2019.2.27.1",
+          "CAP.ValidationLibrary.Attributes": "1.0.0",
           "Microsoft.Azure.DocumentDB.Core": "2.2.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.2.0",
           "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "CosmoLibrary.Common.dll": {}
+        }
+      },
+      "CAP.ValidationLibrary.Attributes/1.0.0": {
+        "runtime": {
+          "ValidationLibrary.Attributes.dll": {}
         }
       }
     }
@@ -1084,13 +1081,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "CAP.ValidationLibrary.Attributes/2019.2.27.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zDK0N2rzy9OC7d4um5OFWfCV3+whB6fuWbmNqEujvG7KbgXjTEfOhhnrN7WFLCwp3zkRczCXD6JbWV2qLWSwdQ==",
-      "path": "cap.validationlibrary.attributes/2019.2.27.1",
-      "hashPath": "cap.validationlibrary.attributes.2019.2.27.1.nupkg.sha512"
     },
     "Microsoft.Azure.DocumentDB.Core/2.2.1": {
       "type": "package",
@@ -1716,6 +1706,11 @@
       "hashPath": "system.threading.threadpool.4.3.0.nupkg.sha512"
     },
     "CAP.CosmoLibrary.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CAP.ValidationLibrary.Attributes/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

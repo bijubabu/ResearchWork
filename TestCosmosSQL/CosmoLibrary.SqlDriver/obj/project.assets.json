@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "CAP.ValidationLibrary.Attributes/2019.2.27.1": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp2.2/CAP.ValidationLibrary.Attributes.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.2/CAP.ValidationLibrary.Attributes.dll": {}
-        }
-      },
       "Microsoft.Azure.DocumentDB.Core/2.2.1": {
         "type": "package",
         "dependencies": {
@@ -1726,7 +1717,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
-          "CAP.ValidationLibrary.Attributes": "2019.2.27.1",
+          "CAP.ValidationLibrary.Attributes": "1.0.0",
           "Microsoft.Azure.DocumentDB.Core": "2.2.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.2.0",
           "Newtonsoft.Json": "12.0.1"
@@ -1737,21 +1728,20 @@
         "runtime": {
           "bin/placeholder/CAP.CosmoLibrary.Common.dll": {}
         }
+      },
+      "CAP.ValidationLibrary.Attributes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/CAP.ValidationLibrary.Attributes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CAP.ValidationLibrary.Attributes.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "CAP.ValidationLibrary.Attributes/2019.2.27.1": {
-      "sha512": "zDK0N2rzy9OC7d4um5OFWfCV3+whB6fuWbmNqEujvG7KbgXjTEfOhhnrN7WFLCwp3zkRczCXD6JbWV2qLWSwdQ==",
-      "type": "package",
-      "path": "cap.validationlibrary.attributes/2019.2.27.1",
-      "files": [
-        ".nupkg.metadata",
-        "cap.validationlibrary.attributes.2019.2.27.1.nupkg.sha512",
-        "cap.validationlibrary.attributes.nuspec",
-        "lib/netcoreapp2.2/CAP.ValidationLibrary.Attributes.dll"
-      ]
-    },
     "Microsoft.Azure.DocumentDB.Core/2.2.1": {
       "sha512": "7VVaoOETig+gQLA2v4ceZbGvO38SfDfq11a8FSxfak7MThgpYgurMb8D5z3dCmCJkJEIYlSed0SzsfA2c0eb3g==",
       "type": "package",
@@ -5832,6 +5822,11 @@
       "type": "project",
       "path": "../CosmoLibrary.Common/CosmoLibrary.Common.csproj",
       "msbuildProject": "../CosmoLibrary.Common/CosmoLibrary.Common.csproj"
+    },
+    "CAP.ValidationLibrary.Attributes/1.0.0": {
+      "type": "project",
+      "path": "../ValidationLibrary.Attributes/ValidationLibrary.Attributes.csproj",
+      "msbuildProject": "../ValidationLibrary.Attributes/ValidationLibrary.Attributes.csproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <PackageId>CAP.ProblemDetails.Exceptions</PackageId>
+    <Description>Handle exceptions and problem details</Description>
+    <Company>Conduent</Company>
+    <Authors>Conduent CAP Core Team</Authors>
+    <Product>CAP</Product>
+    <Copyright>Conduent</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CosmoLibrary.Common\CosmoLibrary.Common.csproj" />
+    <ProjectReference Include="..\ValidationLibrary.Attributes\ValidationLibrary.Attributes.csproj" />
+  </ItemGroup>
+
+</Project>

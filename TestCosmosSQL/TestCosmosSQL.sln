@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCosmosSQL.RestAPI", "TestCosmosSQL\TestCosmosSQL.RestAPI\TestCosmosSQL.RestAPI.csproj", "{C02A2C69-B01C-41BC-9E7A-69E18DE284B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCosmosSQL.RestAPI", "TestCosmosSQL\TestCosmosSQL.RestAPI\TestCosmosSQL.RestAPI.csproj", "{C02A2C69-B01C-41BC-9E7A-69E18DE284B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCosmosSQL.Domain", "TestCosmosSQL\TestCosmosSQL.Domain\TestCosmosSQL.Domain.csproj", "{363347B7-0AF0-4C08-BC0C-028774503F92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCosmosSQL.Domain", "TestCosmosSQL\TestCosmosSQL.Domain\TestCosmosSQL.Domain.csproj", "{363347B7-0AF0-4C08-BC0C-028774503F92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCosmosSQL.Application", "TestCosmosSQL\TestCosmosSQL.Application\TestCosmosSQL.Application.csproj", "{2F2C0F70-462B-45A9-B3D7-7697BA2B13B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCosmosSQL.Application", "TestCosmosSQL\TestCosmosSQL.Application\TestCosmosSQL.Application.csproj", "{2F2C0F70-462B-45A9-B3D7-7697BA2B13B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCosmosSQL.RestAPI.Tests", "TestCosmosSQL\TestCosmosSQL.RestAPI.Tests\TestCosmosSQL.RestAPI.Tests.csproj", "{99A4DD1C-2183-4E02-99CC-D9906ECB63F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCosmosSQL.RestAPI.Tests", "TestCosmosSQL\TestCosmosSQL.RestAPI.Tests\TestCosmosSQL.RestAPI.Tests.csproj", "{99A4DD1C-2183-4E02-99CC-D9906ECB63F8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmoLibrary.Common", "CosmoLibrary.Common\CosmoLibrary.Common.csproj", "{9AD8716A-8B33-4A92-8607-C6B69CDC38E0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmoLibrary.SqlDriver", "CosmoLibrary.SqlDriver\CosmoLibrary.SqlDriver.csproj", "{468B77C2-A6B4-4C09-B160-19808FCC86B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CAP.ProblemDetails.Exceptions", "CAP.ProblemDetails.Exceptions\CAP.ProblemDetails.Exceptions.csproj", "{7425B357-2BA7-4D7D-8ED9-278747C72D6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationLibrary.Attributes", "ValidationLibrary.Attributes\ValidationLibrary.Attributes.csproj", "{BAA6E058-9612-46F3-BE0C-D61135502225}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{468B77C2-A6B4-4C09-B160-19808FCC86B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{468B77C2-A6B4-4C09-B160-19808FCC86B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{468B77C2-A6B4-4C09-B160-19808FCC86B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7425B357-2BA7-4D7D-8ED9-278747C72D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7425B357-2BA7-4D7D-8ED9-278747C72D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7425B357-2BA7-4D7D-8ED9-278747C72D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7425B357-2BA7-4D7D-8ED9-278747C72D6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAA6E058-9612-46F3-BE0C-D61135502225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAA6E058-9612-46F3-BE0C-D61135502225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAA6E058-9612-46F3-BE0C-D61135502225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAA6E058-9612-46F3-BE0C-D61135502225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

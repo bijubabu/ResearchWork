@@ -19,7 +19,6 @@
     <PackageReference Include="AspNetCore.HealthChecks.UI" Version="2.2.10" />
     <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="2.2.2" />
     <PackageReference Include="CAP.LoggingLibrary.Builder" Version="2019.2.27.1" />
-    <PackageReference Include="CAP.ProblemDetails.Exceptions" Version="2019.2.28.1" />
     <PackageReference Include="CAP.ValidationLibrary.Attributes" Version="2019.2.27.1" />
     <PackageReference Include="CorrelationId" Version="2.1.0" />
     <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="3.0.0" />
@@ -55,6 +54,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\CAP.ProblemDetails.Exceptions\CAP.ProblemDetails.Exceptions.csproj" />
     <ProjectReference Include="..\..\CosmoLibrary.Common\CosmoLibrary.Common.csproj" />
     <ProjectReference Include="..\..\CosmoLibrary.SqlDriver\CosmoLibrary.SqlDriver.csproj" />
     <ProjectReference Include="..\TestCosmosSQL.Application\TestCosmosSQL.Application.csproj" />

@@ -1,0 +1,16 @@
+D:\WorkArea\CAP\Core Libraries and Templates\ValidationLibrary\ValidationLibrary.Attributes\bin\Debug\netcoreapp2.2\ValidationLibrary.Attributes.deps.json
+D:\WorkArea\CAP\Core Libraries and Templates\ValidationLibrary\ValidationLibrary.Attributes\bin\Debug\netcoreapp2.2\ValidationLibrary.Attributes.dll
+D:\WorkArea\CAP\Core Libraries and Templates\ValidationLibrary\ValidationLibrary.Attributes\bin\Debug\netcoreapp2.2\ValidationLibrary.Attributes.pdb
+D:\WorkArea\CAP\Core Libraries and Templates\ValidationLibrary\ValidationLibrary.Attributes\obj\Debug\netcoreapp2.2\ValidationLibrary.Attributes.csproj.CoreCompileInputs.cache
+D:\WorkArea\CAP\Core Libraries and Templates\ValidationLibrary\ValidationLibrary.Attributes\obj\Debug\netcoreapp2.2\ValidationLibrary.Attributes.AssemblyInfoInputs.cache
+D:\WorkArea\CAP\Core Libraries and Templates\ValidationLibrary\ValidationLibrary.Attributes\obj\Debug\netcoreapp2.2\ValidationLibrary.Attributes.AssemblyInfo.cs
+D:\WorkArea\CAP\Core Libraries and Templates\ValidationLibrary\ValidationLibrary.Attributes\obj\Debug\netcoreapp2.2\ValidationLibrary.Attributes.dll
+D:\WorkArea\CAP\Core Libraries and Templates\ValidationLibrary\ValidationLibrary.Attributes\obj\Debug\netcoreapp2.2\ValidationLibrary.Attributes.pdb
+D:\GitBiju\ResearchWork\TestCosmosSQL\ValidationLibrary.Attributes\bin\Debug\netcoreapp2.2\ValidationLibrary.Attributes.deps.json
+D:\GitBiju\ResearchWork\TestCosmosSQL\ValidationLibrary.Attributes\bin\Debug\netcoreapp2.2\ValidationLibrary.Attributes.dll
+D:\GitBiju\ResearchWork\TestCosmosSQL\ValidationLibrary.Attributes\bin\Debug\netcoreapp2.2\ValidationLibrary.Attributes.pdb
+D:\GitBiju\ResearchWork\TestCosmosSQL\ValidationLibrary.Attributes\obj\Debug\netcoreapp2.2\ValidationLibrary.Attributes.csproj.CoreCompileInputs.cache
+D:\GitBiju\ResearchWork\TestCosmosSQL\ValidationLibrary.Attributes\obj\Debug\netcoreapp2.2\ValidationLibrary.Attributes.AssemblyInfoInputs.cache
+D:\GitBiju\ResearchWork\TestCosmosSQL\ValidationLibrary.Attributes\obj\Debug\netcoreapp2.2\ValidationLibrary.Attributes.AssemblyInfo.cs
+D:\GitBiju\ResearchWork\TestCosmosSQL\ValidationLibrary.Attributes\obj\Debug\netcoreapp2.2\ValidationLibrary.Attributes.dll
+D:\GitBiju\ResearchWork\TestCosmosSQL\ValidationLibrary.Attributes\obj\Debug\netcoreapp2.2\ValidationLibrary.Attributes.pdb

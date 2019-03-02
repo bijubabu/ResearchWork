@@ -18,7 +18,9 @@ using Microsoft.Extensions.Options;
 using System;
 using CosmoLibrary.Common;
 using CosmoLibrary.SqlDriver;
+using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
+using TestCosmosSQL.Domain.Models;
 using DocumentDbConfig = CosmoLibrary.Common.DocumentDbConfig;
 
 namespace TestCosmosSQL.RestApi
@@ -123,7 +125,6 @@ namespace TestCosmosSQL.RestApi
             }
 
             ConfigureCustomServices(services);
-
         }
 
         private void ConfigureCustomServices(IServiceCollection services)
@@ -135,37 +136,32 @@ namespace TestCosmosSQL.RestApi
             // Add our Config object so it can be injected
             services.Configure<DocumentDbConfig>(Configuration.GetSection("PlacesConfiguration"));
 
+            // Customized connection policy
             var connectionPolicy = new ConnectionPolicy
             {
                 ConnectionProtocol = Protocol.Https,
                 ConnectionMode = ConnectionMode.Direct
             };
+            // customized indexing policy
+            var indexingPolicy = new IndexingPolicy(new RangeIndex(DataType.Number, -1),
+                new RangeIndex(DataType.String, -1),
+                new SpatialIndex(DataType.Point));
 
-            //var cosmosSettings = new RepositorySettings(configuration.DatabaseName, configuration.CollectionName,
-            //    configuration.EndpointUrl.ToString(), configuration.AuthKey,
-            //    connectionPolicy, defaultCollectionThroughput: configuration.CosmoOfferThroughput);
+            // prepare the cosmos settings
+            var cosmosSettings = new RepositorySettings(configuration.DatabaseName, configuration.CollectionName,
+                configuration.EndpointUrl.ToString(), configuration.AuthKey, connectionPolicy: connectionPolicy,
+                defaultCollectionThroughput: configuration.CosmoOfferThroughput, indexingPolicy: indexingPolicy);
 
-            //services.AddDocumentDbRepository<PlaceModel>(cosmosSettings);
+            // Dependency injection for Document Repository
+            services.AddCapDocumentRepository<PlaceModel>(cosmosSettings);
 
-            //===============
-
-            //services.AddSingleton<IDocumentDbRepository<PlaceModel>>(provider =>
-            //{
-            //    IDocumentClient dclient = new DocumentClient(
-            //        new Uri("https://testcosmosplace.documents.azure.com:443/"), 
-            //        "Y3zMq8pLVCxCMrZnoGdnqVJpaYwi1mKYuWrt1RZXJH21LZMmcb4yWxHsBSUw5jnr0satlBInWtJYTZATMiDnzg==", 
-            //        new ConnectionPolicy());
-
-            //    var cfgOption = Options.Create(configuration);
-
-            //    ILogger<GenericRepository<PlaceModel>> logger = 
-            //        new Logger<GenericRepository<PlaceModel>>(new LoggerFactory());
-
-            //    // You can select the constructor you want here.
-            //    return new GenericRepository<PlaceModel>(dclient, cfgOption, logger);
-            //});
-
-            //services.AddSingleton<IDocumentDbRepository<PlaceModel>, GenericRepository<PlaceModel>>();
+            // Use the other overload instead
+            //services.AddCapDocumentRepository<PlaceModel>(configuration.DatabaseName, configuration.CollectionName,
+            //    configuration.EndpointUrl, configuration.AuthKey, settings =>
+            //    {
+            //        settings.ConnectionPolicy = connectionPolicy;
+            //        settings.DefaultCollectionThroughput = 400;
+            //    });
         }
 
 

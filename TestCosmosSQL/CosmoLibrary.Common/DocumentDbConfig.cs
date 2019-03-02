@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.Azure.Documents;
-using CAP.ValidationLibrary.Attributes;
+using ValidationLibrary.Attributes;
 using Microsoft.Azure.Documents.Client;
 
 namespace CosmoLibrary.Common
