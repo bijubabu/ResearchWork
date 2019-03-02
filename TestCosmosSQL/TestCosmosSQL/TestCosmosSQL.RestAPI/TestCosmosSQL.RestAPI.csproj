@@ -55,6 +55,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\CosmoLibrary.Common\CosmoLibrary.Common.csproj" />
+    <ProjectReference Include="..\..\CosmoLibrary.SqlDriver\CosmoLibrary.SqlDriver.csproj" />
     <ProjectReference Include="..\TestCosmosSQL.Application\TestCosmosSQL.Application.csproj" />
   </ItemGroup>
 
