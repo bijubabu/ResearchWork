@@ -1,8 +1,0 @@
-D:\GitBiju\ResearchWork\TestCosmosSQL\CosmoLibrary.Common\bin\Debug\netcoreapp2.2\Microsoft.Azure.Documents.ServiceInterop.dll
-D:\GitBiju\ResearchWork\TestCosmosSQL\CosmoLibrary.Common\bin\Debug\netcoreapp2.2\DocumentDB.Spatial.Sql.dll
-D:\GitBiju\ResearchWork\TestCosmosSQL\CosmoLibrary.Common\bin\Debug\netcoreapp2.2\CosmoLibrary.Common.deps.json
-D:\GitBiju\ResearchWork\TestCosmosSQL\CosmoLibrary.Common\bin\Debug\netcoreapp2.2\CosmoLibrary.Common.dll
-D:\GitBiju\ResearchWork\TestCosmosSQL\CosmoLibrary.Common\obj\Debug\netcoreapp2.2\CosmoLibrary.Common.csprojAssemblyReference.cache
-D:\GitBiju\ResearchWork\TestCosmosSQL\CosmoLibrary.Common\obj\Debug\netcoreapp2.2\CosmoLibrary.Common.csproj.CoreCompileInputs.cache
-D:\GitBiju\ResearchWork\TestCosmosSQL\CosmoLibrary.Common\obj\Debug\netcoreapp2.2\CosmoLibrary.Common.AssemblyInfoInputs.cache
-D:\GitBiju\ResearchWork\TestCosmosSQL\CosmoLibrary.Common\obj\Debug\netcoreapp2.2\CosmoLibrary.Common.AssemblyInfo.cs

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
-using ValidationLibrary.Attributes;
+using CAP.ValidationLibrary.Attributes;
 
 namespace CosmoLibrary.Common
 {

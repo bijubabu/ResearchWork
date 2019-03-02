@@ -18,7 +18,7 @@ namespace TestCosmosSQL.RestApi.Controllers
     [ApiController]
     [ApiConventionType(typeof(DefaultApiConventions))]
     [Route("[controller]")]
-    public class TestCosmosSQLController : ControllerBase
+    public class PlacesController : ControllerBase
     {
         /// <summary>
         /// Customer Repository
@@ -27,7 +27,7 @@ namespace TestCosmosSQL.RestApi.Controllers
         /// <summary>
         /// logger for the controller
         /// </summary>
-        private readonly ILogger<TestCosmosSQLController> _logger;
+        private readonly ILogger<PlacesController> _logger;
         /// <summary>
         /// configuration for the controller
         /// </summary>
@@ -39,8 +39,8 @@ namespace TestCosmosSQL.RestApi.Controllers
         /// <param name="service">TestCosmosSQL service</param>
         /// <param name="logger">Loggin service</param>
         /// <param name="configuration">Loggin service</param>
-        public TestCosmosSQLController(ITestCosmosSQLService service,
-            ILogger<TestCosmosSQLController> logger,
+        public PlacesController(ITestCosmosSQLService service,
+            ILogger<PlacesController> logger,
             IOptionsMonitor<TestCosmosSQLConfiguration> configuration)
         {
             _service = service;
@@ -60,8 +60,5 @@ namespace TestCosmosSQL.RestApi.Controllers
         {
             return await _service.GetResourceAsync(id, CancellationToken.None);
         }
-
-
-
     }
 }

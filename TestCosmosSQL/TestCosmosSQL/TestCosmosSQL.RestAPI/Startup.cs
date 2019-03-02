@@ -16,6 +16,10 @@ using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
+using CosmoLibrary.Common;
+using CosmoLibrary.SqlDriver;
+using Microsoft.Azure.Documents.Client;
+using DocumentDbConfig = CosmoLibrary.Common.DocumentDbConfig;
 
 namespace TestCosmosSQL.RestApi
 {
@@ -43,8 +47,6 @@ namespace TestCosmosSQL.RestApi
             Configuration = configuration;
         }
 
-
-
         /// <summary>
         /// This method gets called by the runtime. Use this method to add services to the container.
         /// </summary>
@@ -68,7 +70,6 @@ namespace TestCosmosSQL.RestApi
             var configuration = new TestCosmosSQLConfiguration();
             Configuration.GetSection("TestCosmosSQLConfiguration").Bind(configuration);
             configuration.Validate();
-
 
             // Add our Config object so it can be injected
             services.Configure<TestCosmosSQLConfiguration>(Configuration.GetSection("TestCosmosSQLConfiguration"));
@@ -121,7 +122,50 @@ namespace TestCosmosSQL.RestApi
                 });
             }
 
+            ConfigureCustomServices(services);
 
+        }
+
+        private void ConfigureCustomServices(IServiceCollection services)
+        {
+            var configuration = new DocumentDbConfig();
+            Configuration.GetSection("PlacesConfiguration").Bind(configuration);
+            configuration.Validate();
+
+            // Add our Config object so it can be injected
+            services.Configure<DocumentDbConfig>(Configuration.GetSection("PlacesConfiguration"));
+
+            var connectionPolicy = new ConnectionPolicy
+            {
+                ConnectionProtocol = Protocol.Https,
+                ConnectionMode = ConnectionMode.Direct
+            };
+
+            //var cosmosSettings = new RepositorySettings(configuration.DatabaseName, configuration.CollectionName,
+            //    configuration.EndpointUrl.ToString(), configuration.AuthKey,
+            //    connectionPolicy, defaultCollectionThroughput: configuration.CosmoOfferThroughput);
+
+            //services.AddDocumentDbRepository<PlaceModel>(cosmosSettings);
+
+            //===============
+
+            //services.AddSingleton<IDocumentDbRepository<PlaceModel>>(provider =>
+            //{
+            //    IDocumentClient dclient = new DocumentClient(
+            //        new Uri("https://testcosmosplace.documents.azure.com:443/"), 
+            //        "Y3zMq8pLVCxCMrZnoGdnqVJpaYwi1mKYuWrt1RZXJH21LZMmcb4yWxHsBSUw5jnr0satlBInWtJYTZATMiDnzg==", 
+            //        new ConnectionPolicy());
+
+            //    var cfgOption = Options.Create(configuration);
+
+            //    ILogger<GenericRepository<PlaceModel>> logger = 
+            //        new Logger<GenericRepository<PlaceModel>>(new LoggerFactory());
+
+            //    // You can select the constructor you want here.
+            //    return new GenericRepository<PlaceModel>(dclient, cfgOption, logger);
+            //});
+
+            //services.AddSingleton<IDocumentDbRepository<PlaceModel>, GenericRepository<PlaceModel>>();
         }
 
 

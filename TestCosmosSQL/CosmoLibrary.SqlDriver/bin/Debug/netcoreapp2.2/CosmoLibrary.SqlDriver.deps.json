@@ -1,20 +1,19 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "7ee233f41e421e15e4b4b4b0033f3f8eff3fed3b"
+    "signature": "0ca09a313efd3ead56845d0ac7f59e688a4b0923"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "CosmoLibrary.Common/1.0.0": {
+      "CosmoLibrary.SqlDriver/1.0.0": {
         "dependencies": {
-          "CAP.ValidationLibrary.Attributes": "2019.2.27.1",
+          "CAP.CosmoLibrary.Common": "1.0.0",
           "Microsoft.Azure.DocumentDB.Core": "2.2.1",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.2.0",
-          "Newtonsoft.Json": "12.0.1"
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0"
         },
         "runtime": {
-          "CosmoLibrary.Common.dll": {}
+          "CosmoLibrary.SqlDriver.dll": {}
         }
       },
       "CAP.ValidationLibrary.Attributes/2019.2.27.1": {
@@ -98,6 +97,14 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/2.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.18315"
           }
@@ -1058,11 +1065,22 @@
           "System.Runtime": "4.3.0",
           "System.Runtime.Handles": "4.3.0"
         }
+      },
+      "CAP.CosmoLibrary.Common/1.0.0": {
+        "dependencies": {
+          "CAP.ValidationLibrary.Attributes": "2019.2.27.1",
+          "Microsoft.Azure.DocumentDB.Core": "2.2.1",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.2.0",
+          "Newtonsoft.Json": "12.0.1"
+        },
+        "runtime": {
+          "CosmoLibrary.Common.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "CosmoLibrary.Common/1.0.0": {
+    "CosmoLibrary.SqlDriver/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1108,6 +1126,13 @@
       "sha512": "sha512-2xMk9LHz1EY+7gVG0lG4qBvkUiVjg8QNPqd2HYmEP5+PL7Ayo96EhBieAhd++Gx4yM+xN8kNqmhZdFMBHeG0HQ==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/2.2.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1iYT6BAnJZGebfclQXiM/drK+JUztSikkpT3xcASBQW4og877bsXtjqrMM4EI71nf8UVtvHt6O8pMdYDEE8/Lw==",
+      "path": "microsoft.extensions.logging.abstractions/2.2.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.2.2.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Options/2.2.0": {
       "type": "package",
@@ -1689,6 +1714,11 @@
       "sha512": "sha512-k/+g4b7vjdd4aix83sTgC9VG6oXYKAktSfNIJUNGxPEj7ryEOfzHHhfnmsZvjxawwcD9HyWXKCXmPjX8U4zeSw==",
       "path": "system.threading.threadpool/4.3.0",
       "hashPath": "system.threading.threadpool.4.3.0.nupkg.sha512"
+    },
+    "CAP.CosmoLibrary.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -1,2 +1,18 @@
 
 TestCosmosSQL/\.vs/TestCosmosSQL/v15/Server/sqlite3/
+
+TestCosmosSQL/\.vs/TestCosmosSQL/v15/\.suo
+
+TestCosmosSQL/\.vs/TestCosmosSQL/v15/
+
+*.pdb
+
+*.dll
+
+*.cache
+
+TestCosmosSQL/CosmoLibrary\.Common/obj/Debug/netcoreapp2\.2/
+
+*.CopyComplete
+
+TestCosmosSQL/CosmoLibrary\.SqlDriver/obj/Debug/netcoreapp2\.2/
