@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-cosmos-sql-api
+  labels:
+    app: test-cosmos-sql-api
+spec:
+  selector:
+    matchLabels:
+      app: test-cosmos-sql-api
+  template:
+    metadata:
+      labels:
+        app: test-cosmos-sql-api
+    spec:
+      containers:
+      - name: test-cosmos-sql-api
+        image: #{CapRegistryName}#/test-cosmos-sql-api:#{Release.Artifacts.backend.BuildId}#
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
+		livenessProbe:
+            httpGet:
+              path: /health/live
+              port: 80
+        readinessProbe:
+            httpGet:
+              path: /health/ready
+              port: 80
+        volumeMounts:
+        - name: secrets
+          mountPath: /app/secrets/appsettings.Kubernetes.json
+          subPath: appsettings.Kubernetes.json
+          readOnly: true
+        env:
+          - name: APPINSIGHTS_INSTRUMENTATIONKEY
+            value: '#{InstrumentationKey}#'
+      imagePullSecrets:
+        - name:  regcred
+      volumes:
+      - name: secrets
+        secret:
+          secretName: test-cosmos-sql-api-setting
