@@ -2,6 +2,7 @@ using TestCosmosSQL.Application.DataTransferObjects;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using TestCosmosSQL.Domain.Models;
 
 namespace TestCosmosSQL.Application.Services
 {
@@ -15,5 +16,7 @@ namespace TestCosmosSQL.Application.Services
         /// </summary>
         /// <returns></returns>
         Task<PlaceCreateDto> GetResourceAsync(Guid id, CancellationToken cancellationToken);
+
+        Task UpsertPlace(PlaceModel placeModel, CancellationToken cancellationToken);
     }
 }

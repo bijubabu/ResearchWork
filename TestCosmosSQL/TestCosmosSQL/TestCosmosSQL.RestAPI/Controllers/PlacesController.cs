@@ -146,8 +146,8 @@ namespace TestCosmosSQL.RestApi.Controllers
                 Status = placeDto.Status
             };
 
-            await _documentRepository.UpsertAsync(placeModel);
-
+            await _service.UpsertPlace(placeModel, CancellationToken.None);
+            
             return CreatedAtAction(nameof(GetByIdAsync), new { placeModel.Id }, placeModel);
         }
 

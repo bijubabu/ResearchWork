@@ -118,9 +118,7 @@ namespace TestCosmosSQL.RestApi
                             Name = "Conduent Internal only"
 
                         };
-
                     };
-
                 });
             }
 
